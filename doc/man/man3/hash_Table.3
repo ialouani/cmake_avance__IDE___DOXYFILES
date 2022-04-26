@@ -1,0 +1,38 @@
+.TH "hash_Table" 3 "Tue Apr 26 2022" "hash table PROJECT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+hash_Table
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "int(* \fBcmp\fP )(void *, void *)"
+.br
+.ti -1c
+.RI "int(* \fBhash\fP )(void *)"
+.br
+.ti -1c
+.RI "struct \fBCell\fP ** \fBentry\fP"
+.br
+.ti -1c
+.RI "int \fBsize\fP"
+.br
+.in -1c
+.SH "Field Documentation"
+.PP 
+.SS "int(* hash_Table::cmp) (void *, void *)"
+
+.SS "struct \fBCell\fP** hash_Table::entry"
+
+.SS "int(* hash_Table::hash) (void *)"
+
+.SS "int hash_Table::size"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for hash table PROJECT from the source code\&.

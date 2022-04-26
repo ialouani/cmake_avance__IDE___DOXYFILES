@@ -1,4 +1,4 @@
-Hashtable Implementation
+Hashtable Implementation {#mainpage}
 ========================
 
 Coding Convention

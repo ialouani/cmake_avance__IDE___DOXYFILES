@@ -116,7 +116,57 @@ une interface graphique de gdb.((via ide1/2: qtcreator))
 ************************EXO7::>>>(doxygen:miseen place)
 mise en place
 mise en place
+>cd doc puis (mkdir doc avant) puis doxygen -g puis edition du fichier Doxyfile:
+graphes_PART: all at no..
+**Extract_all:yes
+**recursive main:yes && at top in 'project name' you set at: the real one name :: the hash **table project(upper case) puis tout en bas input_files at ../
+**Optimize_??: yes pour que les ressources utilisees conviennent au plus a la documentation en cours de generation(pas de conflit au niveau des superpositions de comparaison finales)
+**LATEX_BIB??: NO pour generer que la documentation format html(second question's part).
+**MAN_include(<_>>??):YES pour prendre en compte d'autres choses et generer un dossier man a part.
+Conclusion:important:: INPUT and inclusion du fichier readme en mode recursif(man(attention)) && OUTPUT_DIRECTORY tout en bas :>>>  ./.
+Une fois supprime le html man les deux repertoirs dans le parent sautent(linkage instantanee comme un git...)(())///
+++:
+TREEVIEW; en yes pour avoir un menusection a gauche tout direct et plus dynamic
+=>DYNAMIC_??:YES (section html) --pas important pour le moment(windows __very_used__).
+ASTUCE: eviter les autres fichiers de binaires executables..
+=>=>ne pas inclure le build build2 generation recursive en mode avant copy cmake .. et retrouvailles initiales(version exo1~2+++)
+DANS INCLUDE path on la met /* !\n*.cpp \brief \return0 .. \n*\t/pour les autres a:
+../demo ../hash ../others/Readme.md(qui sera pas pris en compte..)
+=>=>=>RESUME DES ETAPES:
+***PROJECT_NAME:"`${the real one NAME}`"
+***OPTIMIZE_OUTPUT_FOR_C = YES 
+**EXTRACT_ALL = YES
+**INPUT = ../hash ../demo ../README.md
+**RECURSIVE=yes **HTML_DYNAMIC_SECTIONS=yes **GENERATE_TREEVIEW=YES
+**GENERATE_LATEX=NO && au final: GENERATE_MAN=YES.
+#contains include files that are not files but should processed by the...
+doxygen ref > outputFile.txt && diff -y ../Doxyfile(apres mv) outputFile.txt pour obtenir cela suivant une classique obtention deja pre-installee d'une configuration doxyziward java open-sources.//.////////////-----------
+-----------------------------------------------------------------
+FIN_EXO7à11.
+
+
+
+
+
+*****************************************EXO12:dernier ide::en generateur suivant code::blocks::
 >
+resume rapide(pas tres important(qt && vs code suffisent))::
+>>
+>>>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

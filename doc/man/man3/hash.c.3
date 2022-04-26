@@ -1,0 +1,88 @@
+.TH "/home/ubuntu20/Bureau/TD5_avance/cmake_avance__IDE___DOXYFILES/hash/hash.c" 3 "Tue Apr 26 2022" "hash table PROJECT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/ubuntu20/Bureau/TD5_avance/cmake_avance__IDE___DOXYFILES/hash/hash.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <assert\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include 'hash\&.h'\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBCell\fP"
+.br
+.ti -1c
+.RI "struct \fBhash_Table\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBHASH_SIZE\fP   13"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "struct \fBCell\fP * \fBhash_newcell\fP (void *data)"
+.br
+.ti -1c
+.RI "struct \fBhash_Table\fP * \fBhash_init\fP (int(*cmp)(void *, void *), int(*hash)(void *))"
+.br
+.ti -1c
+.RI "int \fBhash_add\fP (struct \fBhash_Table\fP *hash, void *data)"
+.br
+.RI "hash_add a new data into the hash table "
+.ti -1c
+.RI "int \fBhash_cherche\fP (struct \fBhash_Table\fP *hash, void *data)"
+.br
+.ti -1c
+.RI "void \fBhash_free\fP (struct \fBhash_Table\fP *hash, void(*release)(void *))"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define HASH_SIZE   13"
+
+.SH "Function Documentation"
+.PP 
+.SS "int hash_add (struct \fBhash_Table\fP * hash, void * data)"
+
+.PP
+hash_add a new data into the hash table 
+.PP
+\fBParameters\fP
+.RS 4
+\fIhash\fP 
+.br
+\fIdata\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "int hash_cherche (struct \fBhash_Table\fP * hash, void * data)"
+
+.SS "void hash_free (struct \fBhash_Table\fP * hash, void(*)(void *) release)"
+
+.SS "struct \fBhash_Table\fP* hash_init (int(*)(void *, void *) cmp, int(*)(void *) hash)"
+
+.SS "struct \fBCell\fP* hash_newcell (void * data)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for hash table PROJECT from the source code\&.

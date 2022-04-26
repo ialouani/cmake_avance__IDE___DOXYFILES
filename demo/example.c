@@ -16,6 +16,13 @@ int str_hash(unsigned char *str)
   return hash;
 }
 
+/*!
+ * \brief main main program
+ * \param argc program argument counter
+ * \param argv array of arguments
+ * \return 0 if everything ok
+ */
+
 
 int main(){
   struct hash_Table *hash=hash_init((void *)strcmp,(void *)str_hash);
