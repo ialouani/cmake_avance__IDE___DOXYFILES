@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu20/Bureau/TD5/cmake_avance__IDE___DOXYFILES/demo
+# Install script for directory: /home/ubuntu20/Bureau/TD5_avance/cmake_avance__IDE___DOXYFILES/demo
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

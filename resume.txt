@@ -96,3 +96,33 @@ Ide:(sm+/--/)
 ***********************************************************************EXO4:qtcreator:
 Exo4:
 ->debut::
+supprimer les repertoirs de build
+lancer qtcreator puis Projects puis open CMakeLists.txt ou qtcreator CMakeLists.txt direct
+vert lancer ca va make (apres cmake<=>configure project dans un repertoir build-..??? avant(repertoir pere)) puis lancer debug..
+on peut creer une version release apres avoir cree un folder a l'exterieur nomme release
+puis Projects en pleine session release add nn release2.. folder a modifier release dans le repertoir pere on verifie les -DCMAKE_BUILD_TYPE=release puis reconfigure project l'icone en ordi. se reformate en release puis lancer debug block.. tenter autres choses: ctrl+shift+r sur une selection de fonction oui bien click droit(double click selon versions..) puis rename as you want => repercussions sur tout l'alignée.
+On revient sur le session debug suivant l'example1.c execution ca affiche ca sortie en mode r apres gdb ./example1. on selectionne example1.c on click a gauche 2 fois puis click doux affiche breakpoint ajout puis lancer l'icone vert avec un cafard(sur l'add Cherche|) puis en bas au milieu s'affiche (la pile d'appel) si on appuie sur step into puis a gauche en haut tout s'affichent les variables de contexte avant(parametres en general) apres un step into (pas deux fois) ; on peut faire un step over qui permettra de maintenir l'execution pas a pas (<=>n en mode gdb nn graphique) puis la pile d'appel deviendra: #3 #2 #1 en mode up decroissant (l'appelant) et puis sur un step over par exemple apres le int r=0,value; on peut voir les variables locales (de contexte) se mettre a jour eux aussi: r devient 1 pas a pas jusqu'a sortir pile d'appel redevient elle -meme continue la 1er sous-icone du MILIEU continue le programme jusqu'a la fin. EN session de debug, un ps -eaf | grep gdb affiche un chemin indiquant l'utilisation du systeme d'exploitation d'un saut de gdb pour en creer une session qtcreator convenable. On peut meme en clickdroit, se mettre dans la pile d'appel afficher les données, reformater le mini-code assembleur(strings en mode release just in time << par exemple) et sur les variables de contexte ajouter des watch par add break->inspecting adress .. en mode debug session in time puis s'affiche dans le milieu tout a gauche a cote (<-en bas)² des variables de contexte a proximite de la pile d'appel le break point numero ainsi que session debug a refaire pour inspecter => ..devient ca suivant une division en variables de contexte et remise a zero de la pile d'appel=>mauvaise exploitation =>afficher peut le contexte pour voir dans quel 'contexte' les sous_variables interessantes peuvent donner ce qu'on veut par exemple une valeur<0 dans un contexte de remontage fonction dont le cas de base s'effectue en ==0 par mode -2 a chaque fois nous donne l'idée(cf. dho.c).((doit etre fait a la main!!!))/////
+c'etait en general le resume, les choses a apprendre pour qt.
+tres efficace mais gdb reste si on le maitrise plus efficace et moins contraignant en terme de manipulations de lignes de console.. ...
+FIN_EXO4-5-6.//()
+
+
+
+---------------------------------------------------------------------------EXO7:(DOXYFILES)
+************************EXO7::>>>(doxygen:miseen place)
+mise en place
+mise en place
+>
+
+
+
+
+
+
+
+
+
+
+
+
+

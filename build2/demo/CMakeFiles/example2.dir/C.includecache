@@ -8,7 +8,7 @@
 
 ../hash/hash.h
 
-/home/ubuntu20/Bureau/TD5/cmake_avance__IDE___DOXYFILES/demo/example.c
+/home/ubuntu20/Bureau/TD5_avance/cmake_avance__IDE___DOXYFILES/demo/example.c
 string.h
 -
 stdio.h
@@ -16,5 +16,5 @@ stdio.h
 stdlib.h
 -
 hash.h
-/home/ubuntu20/Bureau/TD5/cmake_avance__IDE___DOXYFILES/demo/hash.h
+/home/ubuntu20/Bureau/TD5_avance/cmake_avance__IDE___DOXYFILES/demo/hash.h
 
