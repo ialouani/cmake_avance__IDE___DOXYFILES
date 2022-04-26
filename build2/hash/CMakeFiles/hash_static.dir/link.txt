@@ -1,0 +1,2 @@
+/usr/bin/ar cr libhash_static.a  CMakeFiles/hash_static.dir/hash.c.o
+/usr/bin/ranlib libhash_static.a

@@ -1,0 +1,115 @@
+EXO1: 
+fait depuis compile.sh && scp -R ialouani@(putty__<!!!):$(path)>.-stdout-() ./
+ 
+EXO2:
+
+rq: cmake-gui (graphic tool for cmake using)=>voir apres.
+
+rq2:
+********************
+DEMANDEES AVEC cmake via ../CMakeLists.txt:
+#compile la biblio ainsi que le programme example.c.
+#gcc example.o -llibhash avec libhash.so ((la biblio de hash.c)).
+#FAIT AVEC: gcc -fPIC -c hash.c puis gcc -shared -o llibhash.so hash.o.(gcc -c example (tout avant<()+__++.//))
+#ou: ar rcs libhash.a hash.o(sans fPIC pour:: gcc -c hash.c MIEUX!!!&²²) => gcc libhash.a example.o avec gcc -c example.c
+#avant(pas tout avant(au niveau de la deuxieme etape)).
+********************
+
+rq3:(pour un travail 'automatique'-pas perte de temps__+>>()())
+****************************************************
+INSTALLATION de cmake:
+wget de l'archive depuis l'url 
+tar -xvf(extraction en details des fichiers) puis cd dedans (en un unique folder)
+./configure 
+make
+make install (qui suit make pour mettre les choses en place depuis configure .sh (sudo si erreur)).
+=>2.8.11 (. . 3 nn) bonne!
+(sudo apt purge cmake-qt-gui pour enlever la version collante de cmake_gui d'avant(3.16.3(pas bon du tout avec nos recents developpements(<<()#--____)/.///
+=>=>cmake-gui!
+sudo apt purge cmake-qt-gui (pour 3.16.3)
+puis duso apt update && cd ~/cmake-2.8.11(deja via wget && tar -xzf(++) puis cd(..&²))
+puis:: >>>
+./configure --qt-gui
+make -j5
+bin/cmake-gui
+mais tout avant: sudo apt-get build-dep cmake-qt-gui avant le wget ou l'acces a la precedente
+meme si erreur apres: ./CONFIGURE --qt-gui le 3.16.3 fonctionne correctement::>>>
+BROWNSE(attachements) source files: repository
+// // binary build type file: ./(avant)build(deja cree avant(procedure cmake classique preliminaire)) 
+puis configure puis generate 
+1-configure<=>make(via contenance .PHONY)
+2-generate<=>executer les executables generes.(voir les 3(atelier --makefile()))
+****************************************************
+
+
+
+=>reponse first part::>>>
+cmake_minimun_required(VERSION 2.8.11)
+project(HELLO)
+add_library(hash_static STATIC hash.c)
+target_include_directories(hash_static PUBLIC ${CMKAE_CURRENT_SOURCE_DIR})
+add_executable(example1 example.c)
+target_link_libraries(example1 LINK_PUBLIC hash_static)
+puis cmake .. dans build ( a linterieur)
+puis make (via .PHONY fait tout)
+puis ./example1 ou ./example_dynamic ou les deux (;).
+
+EXO3:
+organisation des sources::
+commande tres importante: add_subdirectory(path) indique qu'il faut charger le cmake trouve dans le $(path)|less.
+1-hash; contient les fichiers de la biblio:: hash.c && hash.h
+2->demo; contient example.c 
+DANS CHACUN UN CMakeLists.txt et dans chaque sous repertoir evidemment.
+**cmake-gui .. refere a cmake-gui tout court (pas de plus(~++)).**
+>
+add_subdirectory ajoute dans le folder exec. hello && demo (hello refere a hash principale target via project(HELLO))
+creation donc de copie demo/hash dans le folder concerne(build2).
+Puis dans chaque sous-repertoir pas sous_sous__repertOIR :::
+on ajoute un cmake:(*.txt#~~)
+//dans hello:
+//dans demo:
+cmake-gui .. puis make depuis demo fait le travail ou cmake .. puis execution depuis interieur demo fait tout.
+un PLUS a prendre en compte:
+la commande:
+>>:
+  	link_directories(${CMAKE_BINARY_DIR}/hash)
+ pour potentiellement(''/////) prevenir les erreurs de recherche de libraires 
+ la on specifie vraiment ou on va retrouver les libraries dans le repository/hash --copy ce qui est le cas (build2/hash apres un cmake .. depuis build2).
+ FIN_EXO3.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ************************************************************************EXO4:qtcreator:
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

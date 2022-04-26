@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC    -shared -Wl,-soname,libhash_dynamic.so -o libhash_dynamic.so CMakeFiles/hash_dynamic.dir/hash.c.o 

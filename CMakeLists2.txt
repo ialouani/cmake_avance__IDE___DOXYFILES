@@ -1,0 +1,19 @@
+cmake_minimum_required (VERSION 2.8.11)
+
+add_library(hash_static STATIC hash.c)
+#<=>hash_static:hash.c
+
+
+target_include_directories(hash_static PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+#<=>ajout dependance dans hash_static publiquement via
+#ou se trouve le CMakeLists.txt (hash.h PUBLIC --reconnaissance).
+
+
+add_library(hash_dynamic SHARED hash.c)
+target_include_directories(hash_dynamic PUBLIC ${CMAKE_CURRENT_SOURCE_DIR)
+#de meme.(on pourrait factoriser)
+
+add_executable(example1 example.c)
+target_link_libraries(example1 LINK_PUBLIC hash_static)
+add_executable(example2 example.c)
+target_link_libraries(example2 LINK_PUBLIC hash_dynamic)

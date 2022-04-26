@@ -1,0 +1,1 @@
+/usr/bin/cc      CMakeFiles/example1.dir/example.c.o  -o example1 -rdynamic libhash_static.a 
