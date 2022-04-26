@@ -76,40 +76,23 @@ la commande:
  pour potentiellement(''/////) prevenir les erreurs de recherche de libraires 
  la on specifie vraiment ou on va retrouver les libraries dans le repository/hash --copy ce qui est le cas (build2/hash apres un cmake .. depuis build2).
  FIN_EXO3.
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- ************************************************************************EXO4:qtcreator:
- 
+Pas necessaire comme:
+CMAKE_SOURCE_DIR/hash pour retenir hash.h dans la copie apres sub_directory
+comme ce dernier qui indique que le linkage se recherche dans les cmake binaries cad. Ceux crees au debut fichiers compiles pour la BIBLIO/hash car le cmake demarre depuis ../copy quu refere a hash.
+Eq. A dire que la recherche se fera dans les fichiers generes cad. Folder principale build2/hash ou on trouvera apres les librairies en question.
+La variable LINK_PUBLIC ET PUBLIC dans les versions recentes tiennent compte de 
+Cmake.. puis make entrainera lajout de demo et hash brut avant le make et le make fera le necessaire cad. Rapatrier les bonnes choses dans lesbons repertoirs.
+Cad: build2/hash et build2/demo (travail de make genereation depuis ceux la)
+Pour bien comprendre: make va faire depuis add subdirectory lajout de fonctionnalitees elementaires respectant le contrat de build2 (rapatriement) 
+Cest pour cela que cmake.. fait une copie et make se contente dexecuter depuis la copie(cmd prec.) Lajout des executables dans les BONS ENDROITS.
+CMAKE-GUI PUIS PATH SOURCES PUIS (BUILD2) CONFIGURE PUIS GENERATE EQ. A CMAKE .. seulement (CMAKEINSTALLPREFIX USR/LOCAL + CMAKE BUILD TYPE (TDS SUIVANTS)) DOU vient le probleme..
+Si on fait seulement cmake.. puis  <{2} :::  cd demo puis make ca va generer tout contrairement a tout ceci depuis hash car linkage+ordre.
+Les versions font en sorte que cmake-gui se comporte differemment selon nos besoins.
+Fin remarqueS.
+-----------------------------------------
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+Ide:(sm+/--/)
+***********************************************************************EXO4:qtcreator:
+Exo4:
+->debut::
