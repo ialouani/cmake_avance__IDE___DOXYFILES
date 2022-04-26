@@ -107,6 +107,8 @@ tres efficace mais gdb reste si on le maitrise plus efficace et moins contraigna
 FIN_EXO4-5-6.//()
 Rq: un double folder puis un projects *.txt.user en chargement resultera d'une ouverture
 independante c=(en courant) ;;  du fichier xml sous language de sgml pour en traiter le project deja affine en mode release dans ~/Bureau/TD5_plus/release(/repository (modified..)) par exemple.(prouve2 utilite du fichier *.*.USER)
+=>LE BUT ETAIT DEXPLORER AVEC LES RACCOURCIS (SOURIS) COMMENT DEBUGGUERsuivant
+une interface graphique de gdb.((via ide1/2: qtcreator))
 
 
 
