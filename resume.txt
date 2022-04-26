@@ -153,6 +153,9 @@ FIN_EXO7à11.
 resume rapide(pas tres important(qt && vs code suffisent))::
 >>
 >>>
+mkdir codeblock puis cmake -G "CodeBlocks -Unix Makefiles" .. puis au milieu en haut(avant: codeblocks HASH.cbp(project cest HASH suivant le CMakeLists principal)) build puis avant run select target example(GCC GNU COMPILER tout avant(firsttt one)) puis run avec la fleche verte=>affichage de ./example.c dans un interface graphique (localhost) d'EXECUTION.
+quitter manuellement puis fin du TD5.
+Rq: build <=> make mais integre puis run l'executable possiblement parametre apres.//
 
 
 
@@ -170,13 +173,7 @@ resume rapide(pas tres important(qt && vs code suffisent))::
 
 
 
-
-
-
-
-
-
-
+FIN_TD5.
 
 
 

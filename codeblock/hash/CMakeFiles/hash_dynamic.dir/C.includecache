@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu20/Bureau/TD5_avance/cmake_avance__IDE___DOXYFILES/hash/hash.c
+assert.h
+-
+stdlib.h
+-
+stdio.h
+-
+hash.h
+/home/ubuntu20/Bureau/TD5_avance/cmake_avance__IDE___DOXYFILES/hash/hash.h
+
+/home/ubuntu20/Bureau/TD5_avance/cmake_avance__IDE___DOXYFILES/hash/hash.h
+
